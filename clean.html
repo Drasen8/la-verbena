@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>La Catrina · Bar Mexicano</title>
+    <meta name="description" content="Cocteles de autor, cocina mexicana contemporánea y eventos en vivo en el corazón de la ciudad. Reserva tu mesa en La Catrina Bar.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YMYxP8NIM9h/6z0xZ3yL5p3TXtIhRUzJG5pG0hU1z5eRk5GsnXKpD1f5fLhK71xo1DPqJLEQYU5PwZ0Ng==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="bar.css">
+</head>
+<body>
+    <header class="site-header" id="top">
+        <div class="container header__inner">
+            <a class="brand" href="#top" aria-label="La Catrina Bar">La Catrina</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="sr-only">Abrir menú principal</span>
+            </button>
+            <nav id="primary-nav" class="primary-nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#signature">Especialidades</a></li>
+                    <li><a href="#menu">Carta</a></li>
+                    <li><a href="#events">Eventos</a></li>
+                    <li><a href="#gallery">Galería</a></li>
+                    <li><a href="#reservations" class="accent-link">Reservar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero__overlay"></div>
+        <div class="container hero__content">
+            <span class="pill">Cocteles artesanales</span>
+            <h1>Sabores mexicanos, noches inolvidables</h1>
+            <p>Descubre mixología de autor, cocina contemporánea y música en vivo todas las semanas en el corazón de la ciudad.</p>
+            <div class="hero__cta">
+                <a class="btn btn--primary" href="#reservations">Reservar mesa</a>
+                <a class="btn btn--ghost" href="#menu">Ver carta</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section signature" id="signature">
+        <div class="container section__header">
+            <span class="section__eyebrow">Mixología</span>
+            <h2>Firmas de la casa</h2>
+            <p>Una carta creada por nuestro maestro mixólogo con ingredientes locales, especias aromáticas y destilados mexicanos.</p>
+        </div>
+        <div class="container signature__grid">
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1572451475713-5a16a190d09d?auto=format&fit=crop&w=800&q=80" alt="Coctel de mezcal con rodaja de naranja y sal de gusano" loading="lazy">
+                <div class="card__body">
+                    <h3>Mezcal Sunset</h3>
+                    <p>Mezcal espadín, cordial de jamaica, lima fresca y bitters de naranja.</p>
+                    <span class="price">12 €</span>
+                </div>
+            </article>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1613470209778-1ccb974a6331?auto=format&fit=crop&w=800&q=80" alt="Coctel verde servido en vaso con hierbas frescas" loading="lazy">
+                <div class="card__body">
+                    <h3>Cósmica Verde</h3>
+                    <p>Tequila blanco, cordial de pepino y menta, soda de toronja y polvo de chile.</p>
+                    <span class="price">11 €</span>
+                </div>
+            </article>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?auto=format&fit=crop&w=800&q=80" alt="Coctel oscuro con hielo tallado" loading="lazy">
+                <div class="card__body">
+                    <h3>Ocaso de Oaxaca</h3>
+                    <p>Mezcal añejo, licor de cacao, café frío y espuma de cardamomo.</p>
+                    <span class="price">13 €</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section menu" id="menu">
+        <div class="container section__header">
+            <span class="section__eyebrow">Carta</span>
+            <h2>Sabores para compartir</h2>
+            <p>Tapas inspiradas en las cantinas mexicanas, pensadas para acompañar nuestros cocteles de autor.</p>
+        </div>
+        <div class="container menu__grid">
+            <div class="menu__column">
+                <h3>Cocteles</h3>
+                <ul class="menu-list">
+                    <li><span>Jardín Azteca</span><span>10 €</span></li>
+                    <li><span>Fuego de Tamarindo</span><span>11 €</span></li>
+                    <li><span>Paloma Rosa</span><span>9 €</span></li>
+                    <li><span>Negroni de Mezcal</span><span>12 €</span></li>
+                </ul>
+            </div>
+            <div class="menu__column">
+                <h3>Cocina</h3>
+                <ul class="menu-list">
+                    <li><span>Tacos de birria</span><span>8 €</span></li>
+                    <li><span>Quesadillas de huitlacoche</span><span>7 €</span></li>
+                    <li><span>Totopos con guacamole ahumado</span><span>6 €</span></li>
+                    <li><span>Ceviche de camarón y mango</span><span>9 €</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section events" id="events">
+        <div class="container section__header">
+            <span class="section__eyebrow">Agenda</span>
+            <h2>Próximos eventos</h2>
+            <p>Música en vivo, DJs invitados y noches temáticas cada semana.</p>
+        </div>
+        <div class="container events__timeline">
+            <article class="event-card">
+                <span class="event-card__date">15 FEB</span>
+                <div>
+                    <h3>Noches de Jazz</h3>
+                    <p>Trío residente con reinterpretaciones latinas de clásicos del jazz.</p>
+                </div>
+            </article>
+            <article class="event-card">
+                <span class="event-card__date">22 FEB</span>
+                <div>
+                    <h3>Día del Mezcal</h3>
+                    <p>Cata guiada con cuatro mezcales artesanales y maridaje de tapas.</p>
+                </div>
+            </article>
+            <article class="event-card">
+                <span class="event-card__date">01 MAR</span>
+                <div>
+                    <h3>Noche Lucha Libre</h3>
+                    <p>DJ set retro, cocteles inspirados en leyendas y premios sorpresa.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+        <div class="container section__header">
+            <span class="section__eyebrow">Ambiente</span>
+            <h2>Galería</h2>
+            <p>Un vistazo a nuestras noches más vibrantes.</p>
+        </div>
+        <div class="container gallery__grid">
+            <figure>
+                <img src="https://images.unsplash.com/photo-1527169402691-feff5539e52c?auto=format&fit=crop&w=900&q=80" alt="Barra iluminada con botellas de mezcal">
+            </figure>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1558645893-6eb274f0d24c?auto=format&fit=crop&w=900&q=80" alt="Pareja brindando con cocteles en una mesa">
+            </figure>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?auto=format&fit=crop&w=900&q=80" alt="Plato de tacos gourmet con salsas">
+            </figure>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=900&q=80" alt="DJ mezclando música con luces neón">
+            </figure>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=900&q=80" alt="Grupo de amigos riendo en un bar">
+            </figure>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1532634988-166b1f1db801?auto=format&fit=crop&w=900&q=80" alt="Detalle de coctel con chile y sal">
+            </figure>
+        </div>
+    </section>
+
+    <section class="section testimonials" id="testimonials">
+        <div class="container section__header">
+            <span class="section__eyebrow">Experiencias</span>
+            <h2>Lo que dicen nuestros invitados</h2>
+        </div>
+        <div class="container testimonials__grid">
+            <article class="testimonial">
+                <p>“Los mejores cocteles de mezcal que he probado en la ciudad. El ambiente es perfecto para una cita.”</p>
+                <span class="testimonial__author">Andrea G.</span>
+            </article>
+            <article class="testimonial">
+                <p>“La música en vivo crea una atmósfera increíble. Nos encanta venir los jueves para desconectar.”</p>
+                <span class="testimonial__author">Luis y María</span>
+            </article>
+            <article class="testimonial">
+                <p>“Reservamos para un cumpleaños y el servicio fue impecable. Las tapas son ideales para compartir.”</p>
+                <span class="testimonial__author">Claudia R.</span>
+            </article>
+        </div>
+    </section>
+
+    <section class="section reservations" id="reservations">
+        <div class="container reservations__wrapper">
+            <div class="reservations__intro">
+                <span class="section__eyebrow">Reservas</span>
+                <h2>Tu mesa te espera</h2>
+                <p>Haz tu reserva en línea y recibe confirmación automática en cuestión de minutos.</p>
+                <ul class="reservation__features">
+                    <li>Reservas para grupos hasta 12 personas</li>
+                    <li>Opciones de menú degustación</li>
+                    <li>Atención personalizada para eventos privados</li>
+                </ul>
+            </div>
+            <form id="reservation-form" class="reservation-form" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Ej. 600 000 000" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="tucorreo@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Personas</label>
+                        <input type="number" id="guests" name="guests" min="1" max="12" value="2" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Fecha</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Hora</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Notas adicionales</label>
+                    <textarea id="message" name="message" rows="3" placeholder="Allergias, celebraciones o peticiones especiales"></textarea>
+                </div>
+                <button class="btn btn--primary btn--full" type="submit">Enviar reserva</button>
+                <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <div class="container contact__grid">
+            <div class="contact__info">
+                <span class="section__eyebrow">Visítanos</span>
+                <h2>Estamos en el centro</h2>
+                <p>Calle del Sol 128, Colonia Centro<br>Ciudad de México</p>
+                <ul class="contact__list">
+                    <li><strong>Horario:</strong> Martes a domingo · 18:00 - 02:00</li>
+                    <li><strong>Teléfono:</strong> +52 55 1234 5678</li>
+                    <li><strong>Email:</strong> hola@lacatrinabar.com</li>
+                </ul>
+                <div class="contact__social">
+                    <a href="#" aria-label="Instagram de La Catrina">Instagram</a>
+                    <a href="#" aria-label="Facebook de La Catrina">Facebook</a>
+                    <a href="#" aria-label="Spotify de La Catrina">Spotify</a>
+                </div>
+            </div>
+            <div class="contact__map" aria-hidden="true"></div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer__inner">
+            <span>© 2026 La Catrina Bar. Todos los derechos reservados.</span>
+            <a href="#top">Volver arriba</a>
+        </div>
+    </footer>
+
+    <script src="bar.js" defer></script>
+</body>
+</html>
