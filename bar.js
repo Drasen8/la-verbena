@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         navToggle.setAttribute("aria-expanded", "false");
         primaryNav.classList.remove("primary-nav--open");
-        document.body.classList.remove("nav-open");
     };
 
     if (navToggle && primaryNav) {
@@ -19,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const expanded = navToggle.getAttribute("aria-expanded") === "true";
             navToggle.setAttribute("aria-expanded", String(!expanded));
             primaryNav.classList.toggle("primary-nav--open");
-            document.body.classList.toggle("nav-open");
         });
 
         navLinks.forEach((link) => {
